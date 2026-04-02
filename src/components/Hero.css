@@ -1,0 +1,158 @@
+.hero {
+  padding: 60px 0 40px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.hero-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border-light);
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+  border-color: var(--accent);
+}
+
+.status-badge {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.hero-info {
+  max-width: 600px;
+}
+
+.hero-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.hero-location svg {
+  opacity: 0.7;
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.hero-title {
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.hero-summary {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+}
+
+.hero-summary strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.hero-link:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+.hero-link svg {
+  opacity: 0.8;
+}
+
+.hero-link:hover svg {
+  opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 40px 0 30px;
+  }
+  
+  .hero-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .hero-links {
+    gap: 8px;
+  }
+  
+  .hero-link {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+}
