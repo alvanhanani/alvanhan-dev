@@ -28,7 +28,7 @@ const Projects = () => {
       description: 'Official digital education platform for Indonesian Scout Movement serving 10M+ users across 34 provinces. Built with microservices architecture combining NestJS and Laravel.',
       technologies: ['NestJS', 'Laravel', 'PostgreSQL', 'RabbitMQ', 'Redis'],
       images: [ayoPramuka1, ayoPramuka2],
-      link: null
+      link: 'https://ayopramuka-kwarnas.id/jelajah'
     },
     {
       title: 'Sam Rumah',
