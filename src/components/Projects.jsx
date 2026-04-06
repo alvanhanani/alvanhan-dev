@@ -20,7 +20,7 @@ const Projects = () => {
       description: 'National-scale digital platform for booking padel sports courts in Indonesia. Features real-time scheduling, membership management, and seamless payment integration.',
       technologies: ['NestJS', 'PostgreSQL', 'Redis', 'Docker', 'Xendit'],
       images: [padelPromo1, padelPromo2, cmsImage],
-      link: 'https://www.padelbeach.id/'
+      link: 'https://www.beachpadelclub.id'
     },
     {
       title: 'AyoPramuka',
